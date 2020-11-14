@@ -24,7 +24,9 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #ffffff; }
+  background: #ffffff; 
+  overflow-x: hidden;
+}
   body.is-preload *, body.is-preload *:before, body.is-preload *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -1786,6 +1788,7 @@ ul.icons {
 
 /* Wrapper */
 .wrapper {
+  background-color: white;
   padding: 8rem 0 6rem 0 ;
   position: relative;
   z-index: 1; }
@@ -2067,7 +2070,8 @@ ul.icons {
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed;
   background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(NEWCHURCHPORTRAIT.jpg);
-  background-position: bottom;
+  background-position: top;
+  height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -2208,6 +2212,16 @@ ul.icons {
   @media screen and (max-width: 980px) {
     #cta {
       background-attachment: scroll; } }
+  @media screen and (min-width: 360px){
+    #cta{
+      height: 40vh;
+    }
+  }
+  @media screen and (min-width: 1600px){
+    #cta{
+      height: 100vh;
+    }
+  }
 
 /* Footer */
 #footer {
@@ -2914,6 +2928,21 @@ body.is-menu-visible #menu {
   margin-top: 4vh;
   padding: 0 1.25rem;
   text-decoration: none;}
+
+#frame{
+    width: 100vh;
+}
+@media screen and (min-width: 280px){
+  #fullscreen{
+    position: absolute;
+    top: -47vh;
+    min-width:100%;
+    min-height:100%;
+    width: auto;
+    height: auto;
+  }
+    
+}
 @media screen and (max-width: 411px){
   .logo-vineyard{
     color: #ffffff;
@@ -2938,39 +2967,34 @@ body.is-menu-visible #menu {
     padding: 0 1.25rem;
     text-decoration: none;}
     
+  
 }
 
-@media screen and (min-width: 411px){
-  #fullscreen{
-    position: absolute;
-    top: -43.2vh;
-    min-width:100%;
-    min-height:100%;
-    width: 411px;
-    height: auto;
-  }
-    
-}
+
 @media screen and (min-width: 320px){
   #fullscreen{
     position: absolute;
     top: -54vh;
     min-width:100%;
     min-height:100%;
-    width: 320px;
+    width: auto;
     height: auto;
   }
+  
     
 }
 @media screen and (min-width: 360px){
   #fullscreen{
     position: absolute;
-    top: -48vh;
+    top: -60vh;
     min-width:100%;
     min-height:100%;
-    width: 360px;
-    height: auto;
+    width: auto;
+    height: 35vh;
   }
+  #frame{
+    width: 50vh;
+}
     
 }
 @media screen and (min-width: 375px){
@@ -2979,7 +3003,18 @@ body.is-menu-visible #menu {
     top: -46vh;
     min-width:100%;
     min-height:100%;
-    width: 375px;
+    width: auto;
+    height: auto;
+  }
+    
+}
+@media screen and (min-width: 411px){
+  #fullscreen{
+    position: absolute;
+    top: -43.2vh;
+    min-width:100%;
+    min-height:100%;
+    width: auto;
     height: auto;
   }
     
@@ -2990,29 +3025,7 @@ body.is-menu-visible #menu {
     top: -44.2vh;
     min-width:100%;
     min-height:100%;
-    width: 414px;
-    height: auto;
-  }
-    
-}
-@media screen and (min-width: 768px){
-  #fullscreen{
-    position: absolute;
-    top: -41vh;
-    min-width:100%;
-    min-height:100%;
-    width: 768px;
-    height: auto;
-  }
-    
-}
-@media screen and (min-width: 1024px){
-  #fullscreen{
-    position: absolute;
-    top: -59vh;
-    min-width:100%;
-    min-height:100%;
-    width: 1024px;
+    width: auto;
     height: auto;
   }
     
@@ -3023,29 +3036,42 @@ body.is-menu-visible #menu {
     top: -30vh;
     min-width:100%;
     min-height:100%;
-    width: 540px;
+    width: auto;
     height: auto;
   }
     
 }
-@media screen and (min-width: 280px){
+@media screen and (min-width: 768px){
   #fullscreen{
     position: absolute;
-    top: -47vh;
+    top: -41vh;
     min-width:100%;
     min-height:100%;
-    width: 280px;
+    width: auto;
     height: auto;
   }
     
 }
+@media screen and (min-width: 1024px){
+  #fullscreen{
+    position: absolute;
+    top: -59vh;
+    min-width:100%;
+    min-height:100%;
+    width: auto;
+    height: auto;
+  }
+    
+}
+
+
 @media screen and (min-width: 1920px){
   #fullscreen{
     position: absolute;
     top: -44vh;
     min-width:100%;
     min-height:100%;
-    width: 1920px;
+    width: auto;
     height: auto;
   }
     
@@ -3059,3 +3085,6 @@ body.is-menu-visible #menu {
     
 }
 
+#icon_logo{
+  width: 30vh;
+}
