@@ -10,6 +10,7 @@ app.use(bodyParser())
 
 
 app.use(express.static("./public/"))
+app.use(express.static("./public/images/pictures/"))
 app.set("views", "./public/")
 app.set("view engine", "ejs")
 
