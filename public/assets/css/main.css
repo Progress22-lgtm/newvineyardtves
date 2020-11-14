@@ -57,6 +57,7 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
+  text-align: center;
   display: block; }
 
 body {
@@ -2447,6 +2448,10 @@ body {
   top: 0;
   width: 100%;
   z-index: 10001; }
+  #header > a {
+    text-align: center;
+    margin-left: 90vh;
+  }
   #header > .logo {
     color: #ffffff;
     font-size: 1rem;
@@ -2895,6 +2900,7 @@ body.is-menu-visible #menu {
 }
 
 #logo-vineyard{
+  text-align: center;
   width: 25vh;
 }
 
@@ -3086,5 +3092,6 @@ body.is-menu-visible #menu {
 }
 
 #icon_logo{
+  height: 15vh;
   width: 30vh;
 }
