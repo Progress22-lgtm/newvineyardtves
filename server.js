@@ -10,7 +10,7 @@ app.use(bodyParser())
 
 
 app.use(express.static("./public/"))
-app.use("/images", express.static(__dirname + "/public/images/pictures/"), )
+app.use("/images", express.static(__dirname + "/pictures"))
 app.set("views", "./public/")
 app.set("view engine", "ejs")
 
