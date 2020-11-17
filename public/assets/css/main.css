@@ -2976,7 +2976,17 @@ body.is-menu-visible #menu {
   
 }
 
-
+@media screen and (min-width: 294px){
+  #fullscreen{
+    position: absolute;
+    top: -46vh;
+    min-width:100%;
+    min-height:100%;
+    width: auto;
+    height: auto;
+  }
+    
+}
 @media screen and (min-width: 320px){
   #fullscreen{
     position: absolute;
@@ -3111,12 +3121,6 @@ body.is-menu-visible #menu {
 #long{
   height: 50vh;
 }
-@media screen and (min-width: 1600px){
-  #header > a {
-    margin-left: 80vh;
-    margin-top: 4vh;
-  }
-}
 @media screen and (min-width: 768px){
   #header > a {
     margin-left: 23vh;
@@ -3133,5 +3137,12 @@ body.is-menu-visible #menu {
   #header > a {
     margin-left: 18vh;
     margin-top: 1vh;
+  }
+}
+
+@media screen and (min-width: 1600px){
+  #header > a {
+    margin-left: 80vh;
+    margin-top: 4vh;
   }
 }
