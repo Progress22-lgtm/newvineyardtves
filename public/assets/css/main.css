@@ -3145,4 +3145,6 @@ body.is-menu-visible #menu {
     margin-left: 80vh;
     margin-top: 4vh;
   }
+  #frame{
+    width: 100vh;}
 }
